@@ -1,0 +1,335 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ByunCargo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ByunCargo.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ByunCargo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ByunCargo Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BYUNCARGO_DIALOG DIALOGEX 0, 0, 490, 391
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Particle Tracker (Made by Young-Moo Byun)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Open a video file...",IDC_BTN_OPEN_VIDEO,7,7,80,14
+    CONTROL         "Real image",IDC_BTN_IMAGEREAL,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,104,235,148
+    LTEXT           "Boundary b/w B && W (0 ~ 255):",IDC_STATIC,16,82,105,8
+    EDITTEXT        IDC_EDT_BOUNDARY,121,79,22,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Apply",IDC_BTN_APPLY,161,78,50,14
+    CONTROL         "Gray image",IDC_BTN_IMAGEGRAY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,248,104,235,148
+    PUSHBUTTON      "Previous frame (&Q)",IDC_BTN_PREV,19,364,66,14
+    PUSHBUTTON      "Next frame (&E)",IDC_BTN_NEXT,90,364,66,14
+    EDITTEXT        IDC_EDT_FRAMEPOS,116,322,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Frame position:",IDC_STATIC,19,324,62,8
+    PUSHBUTTON      "Open a template file...",IDC_BTN_OPEN_TEMPLATE,92,7,80,
+                    14
+    CONTROL         "Show the position and orientation of particles",
+                    IDC_CHK_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,260,
+                    164,10
+    LTEXT           "Number of particles:",IDC_STATIC,19,306,69,8
+    EDITTEXT        IDC_EDT_NUMOFCARGOES,116,302,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Save...",IDC_BTN_SAVE,433,7,50,14
+    EDITTEXT        IDC_EDT_TARGETFRAME,83,342,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Go to",IDC_BTN_GOTO,19,342,58,14
+    LTEXT           "th frame",IDC_STATIC,127,345,29,8
+    PUSHBUTTON      "Find particles !!!",IDC_BTN_FIND,220,7,100,14
+    LTEXT           "Rod length:",IDC_STATIC,16,41,42,8
+    EDITTEXT        IDC_EDT_RODLENGTH,61,39,22,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "pixels",IDC_STATIC,88,41,20,8
+    LTEXT           "Starting frame:",IDC_STATIC,192,327,46,8
+    LTEXT           "Ending frame:",IDC_STATIC,192,345,46,8
+    EDITTEXT        IDC_EDT_CROP_START,243,324,30,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CROP_END,243,343,30,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Crop...",IDC_BTN_CROP,280,343,50,14
+    CONTROL         "Find particles only in a red rectangle (Mouse right click)",
+                    IDC_CHK_AREA_INCLUSION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,248,260,200,10
+    LTEXT           "Min # of black pixels:",IDC_STATIC,117,41,68,8
+    LTEXT           "Max # of black pixels:",IDC_STATIC,117,59,69,8
+    EDITTEXT        IDC_EDT_PIXEL_MIN,189,39,22,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PIXEL_MAX,189,57,22,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Rod with cargo",IDC_RAD_ROD_CARGO,"Button",
+                    BS_AUTORADIOBUTTON,232,44,65,10
+    CONTROL         "Rod",IDC_RAD_ROD,"Button",BS_AUTORADIOBUTTON,232,61,29,
+                    10
+    GROUPBOX        "Type of particle",IDC_STATIC,225,27,78,71
+    GROUPBOX        "Parameters",IDC_STATIC,7,27,212,71
+    GROUPBOX        "Crop",IDC_STATIC,180,311,160,53
+    GROUPBOX        "Frame",IDC_STATIC,7,288,161,96
+    CONTROL         "Neglect particles in green rectangles (Mouse left click)",
+                    IDC_CHK_AREA_EXCLUSION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,248,277,200,10
+    PUSHBUTTON      "Clear all",IDC_BTN_CLEAR_ALL_EXCLUDED_AREAS,332,293,60,
+                    14
+    PUSHBUTTON      "Clear the last",IDC_BTN_CLEAR_LAST_EXCLUDED_AREA,268,
+                    293,60,14
+    CONTROL         "Sphere",IDC_RAD_SPHERE,"Button",BS_AUTORADIOBUTTON,232,
+                    78,39,10
+    PUSHBUTTON      "Manual tracking...",IDC_BTN_MANUAL_DATA,363,7,65,14
+    CONTROL         "Progress1",IDC_PRG_STATUS,"msctls_progress32",WS_BORDER,
+                    179,370,304,14
+    GROUPBOX        "",IDC_STATIC,310,27,173,71
+    CONTROL         "Multiple video files",IDC_CHK_MULTIPLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,318,27,72,10
+    GROUPBOX        "",IDC_STATIC,348,311,135,53
+    LTEXT           "Input file prefix:",IDC_STATIC,318,43,48,8
+    LTEXT           "Output file prefix:",IDC_STATIC,318,62,54,8
+    EDITTEXT        IDC_EDT_PREFIX_INPUT,374,40,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PREFIX_OUTPUT,374,59,48,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BTN_BROWSE,413,78,60,14
+    LTEXT           "Start:",IDC_STATIC,428,43,18,8
+    LTEXT           "End:",IDC_STATIC,428,62,16,8
+    EDITTEXT        IDC_EDT_INPUT_START,447,40,26,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_INPUT_END,447,59,26,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Video height:",IDC_STATIC,16,59,42,8
+    EDITTEXT        IDC_EDT_VIDEOHEIGHT,61,57,22,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "pixels",IDC_STATIC,88,59,20,8
+    CONTROL         "Find a single particle",IDC_CHK_FIND_SINGLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,353,311,82,10
+    LTEXT           "Max distance:",IDC_STATIC,355,327,45,8
+    LTEXT           "Min I:",IDC_STATIC,355,345,18,8
+    LTEXT           "Max I:",IDC_STATIC,410,345,20,8
+    EDITTEXT        IDC_EDT_MAX_DISTANCE,406,324,25,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "pixels",IDC_STATIC,437,327,20,8
+    EDITTEXT        IDC_EDT_I_MIN,378,343,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_I_MAX,434,343,20,14,ES_AUTOHSCROLL
+END
+
+IDD_SAVE_OPTION DIALOG DISCARDABLE  0, 0, 260, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Option"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,24,50,14
+    CONTROL         "Save all data with missing particles",
+                    IDC_RAD_SAVE_ALL_W_MP,"Button",BS_AUTORADIOBUTTON,22,24,
+                    132,10
+    CONTROL         "Save an oriental distribution",IDC_RAD_SAVE_DIST,"Button",
+                    BS_AUTORADIOBUTTON,22,64,112,10
+    CONTROL         "Save all data without missing particles",
+                    IDC_RAD_SAVE_ALL_WO_MP,"Button",BS_AUTORADIOBUTTON,22,44,
+                    132,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ByunCargo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ByunCargo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ByunCargo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ByunCargo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BYUNCARGO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 384
+    END
+
+    IDD_SAVE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ByunCargo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ByunCargo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
