@@ -6,7 +6,7 @@ I developed a video analysis program to track the trajectories of (catalytic) mi
 My video analysis program for microswimmers is written in Microsoft Visual C++ and runs on Windows.
 My program *automatically* analyzes a video file and *mathematically* calculates two kinds of trajectories of microswimmers:
 - **Position** using the geometric center (centroid) [https://en.wikipedia.org/wiki/Centroid]
-- **Orientation** using the moment of inertia tensor [https://en.wikipedia.org/wiki/Moment_of_inertia#Inertia_tensor]
+- **Orientation** using the eigenvectors of the moment of inertia tensor [https://en.wikipedia.org/wiki/Moment_of_inertia#Inertia_tensor]
 
 Using the translational and rotational trajectories of microswimmers above, one can *accurately* find the following properties of microparticles suspended in a fluid:
 - Self-propulsion speed
